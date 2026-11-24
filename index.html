@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سناك كرانش | Snack Crunch - المنيو الإلكتروني</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- الهيدر العلوي -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge-demo">✨ نموذج منيو إلكتروني تفاعلي</span>
+      <h1 class="brand-title">سناك <span>كرانش</span></h1>
+      <p class="brand-subtitle">طعم القرمشة الأصلي.. بيتزا ساخنة، برغر طازج، وشاورما على أصولها</p>
+      <div class="hero-meta">
+        <span>🕒 يومياً: 12:00 ظهراً - 1:00 ليلاً</span>
+        <span>🛵 توصيل سريع لجميع المناطق</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- شريط البحث والتصنيفات -->
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="ابحث عن وجبتك المفضلة (بيتزا، شاورما، برغر...)" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="categories" id="categoryButtons">
+        <button class="cat-btn active" data-category="all">الكل 🍽️</button>
+        <button class="cat-btn" data-category="pizza">البيتزا 🍕</button>
+        <button class="cat-btn" data-category="burger">البرغر 🍔</button>
+        <button class="cat-btn" data-category="shawarma">الشاورما 🌯</button>
+        <button class="cat-btn" data-category="meals">بروستد وستربس 🍗</button>
+        <button class="cat-btn" data-category="sides">مقبلات 🍟</button>
+        <button class="cat-btn" data-category="drinks">مشروبات 🥤</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- شبكة عرض الأصناف -->
+  <main class="container main-section">
+    <div class="menu-grid" id="menuGrid">
+      <!-- يتم توليد البطاقات تلقائياً من script.js -->
+    </div>
+    <p id="emptyMessage" class="empty-msg" style="display: none;">
+      عذراً، لا توجد وجبة مطابقة لبحثك حالياً.
+    </p>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <h3>سناك كرانش - Snack Crunch</h3>
+      <p>هذا المنيو نموذج تجريبي (Demo) قابل للتخصيص الكامل باسم وهوية وأسعار مطعمك.</p>
+      <p class="copyright">تصميم وبرمجة واجهات المطاعم الحديثة © 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
